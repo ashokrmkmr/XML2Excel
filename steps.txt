@@ -1,0 +1,3 @@
+1.configure path for xml file
+2.configure path for excel file
+3.run java program

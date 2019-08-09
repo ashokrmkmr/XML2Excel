@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="UTF-8"?><Broker>
+<CompiledApplication>
+<ConfigurableProperty uri="startMode"/>
+<ConfigurableProperty uri="javaIsolation"/>
+</CompiledApplication>
+<CompiledMessageFlow name="sample">
+<ConfigurableProperty uri="sample#additionalInstances"/>
+<ConfigurableProperty uri="sample#notificationThresholdMsgsPerSec"/>
+<ConfigurableProperty uri="sample#maximumRateMsgsPerSec"/>
+<ConfigurableProperty uri="sample#processingTimeoutSec"/>
+<ConfigurableProperty uri="sample#processingTimeoutAction"/>
+<ConfigurableProperty uri="sample#wlmPolicy"/>
+<ConfigurableProperty uri="sample#commitCount"/>
+<ConfigurableProperty uri="sample#commitInterval"/>
+<ConfigurableProperty uri="sample#coordinatedTransaction"/>
+<ConfigurableProperty uri="sample#consumerPolicySet"/>
+<ConfigurableProperty uri="sample#providerPolicySet"/>
+<ConfigurableProperty uri="sample#consumerPolicySetBindings"/>
+<ConfigurableProperty uri="sample#providerPolicySetBindings"/>
+<ConfigurableProperty uri="sample#securityProfileName"/>
+<ConfigurableProperty uri="sample#monitoringProfile"/>
+<ConfigurableProperty uri="sample#startMode"/>
+<ConfigurableProperty uri="sample#startInstancesWhenFlowStarts"/>
+<ConfigurableProperty override="/sample" uri="sample#HTTP Input.URLSpecifier"/>
+<ConfigurableProperty uri="sample#HTTP Input.useHTTPS"/>
+<ConfigurableProperty uri="sample#HTTP Input.decompressInputMessage"/>
+<ConfigurableProperty override="60" uri="sample#HTTP Input.timeoutForClient"/>
+<ConfigurableProperty uri="sample#HTTP Input.faultFormat"/>
+<ConfigurableProperty uri="sample#HTTP Input.validateMaster"/>
+<ConfigurableProperty uri="sample#HTTP Input.securityProfileName"/>
+<ConfigurableProperty uri="sample#ESQL Compute.dataSource"/>
+<ConfigurableProperty uri="sample#ESQL Compute.connectDatasourceBeforeFlowStarts"/>
+<ConfigurableProperty uri="sample#ESQL Compute.validateMaster"/>
+<ConfigurableProperty uri="sample#HTTP Reply.validateMaster"/>
+<ConfigurableProperty override="ABC.Q" uri="sample#MQ Input.queueName"/>
+<ConfigurableProperty uri="sample#MQ Input.connection"/>
+<ConfigurableProperty uri="sample#MQ Input.destinationQueueManagerName"/>
+<ConfigurableProperty uri="sample#MQ Input.queueManagerHostname"/>
+<ConfigurableProperty uri="sample#MQ Input.listenerPortNumber"/>
+<ConfigurableProperty uri="sample#MQ Input.channelName"/>
+<ConfigurableProperty uri="sample#MQ Input.securityIdentity"/>
+<ConfigurableProperty uri="sample#MQ Input.useSSL"/>
+<ConfigurableProperty uri="sample#MQ Input.SSLPeerName"/>
+<ConfigurableProperty uri="sample#MQ Input.SSLCipherSpec"/>
+<ConfigurableProperty uri="sample#MQ Input.serializationToken"/>
+<ConfigurableProperty uri="sample#MQ Input.topicProperty"/>
+<ConfigurableProperty uri="sample#MQ Input.resetBrowseTimeout"/>
+<ConfigurableProperty uri="sample#MQ Input.validateMaster"/>
+<ConfigurableProperty uri="sample#MQ Input.securityProfileName"/>
+<ConfigurableProperty uri="sample#MQ Input.componentLevel"/>
+<ConfigurableProperty uri="sample#MQ Input.additionalInstances"/>
+<ConfigurableProperty uri="sample#MQ Input.policyUrl"/>
+<ConfigurableProperty override="DEF.Q" uri="sample#MQ Output.queueName"/>
+<ConfigurableProperty uri="sample#MQ Output.connection"/>
+<ConfigurableProperty uri="sample#MQ Output.destinationQueueManagerName"/>
+<ConfigurableProperty uri="sample#MQ Output.queueManagerHostname"/>
+<ConfigurableProperty uri="sample#MQ Output.listenerPortNumber"/>
+<ConfigurableProperty uri="sample#MQ Output.channelName"/>
+<ConfigurableProperty uri="sample#MQ Output.securityIdentity"/>
+<ConfigurableProperty uri="sample#MQ Output.useSSL"/>
+<ConfigurableProperty uri="sample#MQ Output.SSLPeerName"/>
+<ConfigurableProperty uri="sample#MQ Output.SSLCipherSpec"/>
+<ConfigurableProperty uri="sample#MQ Output.queueManagerName"/>
+<ConfigurableProperty uri="sample#MQ Output.replyToQMgr"/>
+<ConfigurableProperty uri="sample#MQ Output.replyToQ"/>
+<ConfigurableProperty uri="sample#MQ Output.validateMaster"/>
+<ConfigurableProperty uri="sample#MQ Output.securityProfileName"/>
+<ConfigurableProperty uri="sample#MQ Output.policyUrl"/>
+<ConfigurableProperty uri="sample#MQ Output.AddRequestToGroup"/>
+<ConfigurableProperty uri="sample#MQ Output.GroupRequestFolderName"/>
+<ConfigurableProperty uri="sample#MQ Output.GroupRequestTimeout"/>
+<ConfigurableProperty override="http://localhost:7800/http" uri="sample#HTTP Request.URLSpecifier"/>
+<ConfigurableProperty override="60" uri="sample#HTTP Request.timeoutForServer"/>
+<ConfigurableProperty uri="sample#HTTP Request.httpProxyLocation"/>
+<ConfigurableProperty override="1.1" uri="sample#HTTP Request.httpVersion"/>
+<ConfigurableProperty uri="sample#HTTP Request.enableKeepAlive"/>
+<ConfigurableProperty uri="sample#HTTP Request.requestCompressionType"/>
+<ConfigurableProperty override="SSL_TLSv2" uri="sample#HTTP Request.protocol"/>
+<ConfigurableProperty uri="sample#HTTP Request.allowedCiphers"/>
+<ConfigurableProperty uri="sample#HTTP Request.hostnameChecking"/>
+<ConfigurableProperty uri="sample#HTTP Request.keyAlias"/>
+<ConfigurableProperty uri="sample#HTTP Request.enableCRLCheck"/>
+<ConfigurableProperty uri="sample#HTTP Request.acceptCompressedResponses"/>
+<ConfigurableProperty uri="sample#HTTP Request.validateMaster"/>
+<ConfigurableProperty uri="sample#HTTP Request.securityProfileName"/>
+<ConfigurableProperty uri="sample#REST Request.securityIdentity"/>
+<ConfigurableProperty override="60" uri="sample#REST Request.timeoutForServer"/>
+<ConfigurableProperty override="http://localhost:7801" uri="sample#REST Request.baseURL"/>
+<ConfigurableProperty uri="sample#REST Request.httpProxyLocation"/>
+<ConfigurableProperty uri="sample#REST Request.enableKeepAlive"/>
+<ConfigurableProperty uri="sample#REST Request.requestCompressionType"/>
+<ConfigurableProperty override="SSL_TLSv2" uri="sample#REST Request.protocol"/>
+<ConfigurableProperty uri="sample#REST Request.allowedCiphers"/>
+<ConfigurableProperty uri="sample#REST Request.hostnameChecking"/>
+<ConfigurableProperty uri="sample#REST Request.keyAlias"/>
+<ConfigurableProperty uri="sample#REST Request.enableCRLCheck"/>
+<ConfigurableProperty override="true" uri="sample#REST Request.acceptCompressedResponses"/>
+<ConfigurableProperty uri="sample#REST Request.validateMaster"/>
+<ConfigurableProperty uri="sample#REST Request.securityProfileName"/>
+<ConfigurableProperty override="/soap" uri="sample#SOAP Input.urlSelector"/>
+<ConfigurableProperty uri="sample#SOAP Input.useHTTPS"/>
+<ConfigurableProperty override="50" uri="sample#SOAP Input.maxClientWaitTime"/>
+<ConfigurableProperty uri="sample#SOAP Input.allowQueryWSDL"/>
+<ConfigurableProperty uri="sample#SOAP Input.initialContextFactory"/>
+<ConfigurableProperty uri="sample#SOAP Input.locationJndiBindings"/>
+<ConfigurableProperty uri="sample#SOAP Input.connectionFactoryName"/>
+<ConfigurableProperty uri="sample#SOAP Input.backoutDestination"/>
+<ConfigurableProperty uri="sample#SOAP Input.backoutThreshold"/>
+<ConfigurableProperty uri="sample#SOAP Input.propertySelector"/>
+<ConfigurableProperty uri="sample#SOAP Input.timeStampSelector"/>
+<ConfigurableProperty uri="sample#SOAP Input.messageDeliveryModeSelector"/>
+<ConfigurableProperty uri="sample#SOAP Input.messagePrioritySelector"/>
+<ConfigurableProperty uri="sample#SOAP Input.messageIDSelector"/>
+<ConfigurableProperty uri="sample#SOAP Input.messageRedeliveredSelector"/>
+<ConfigurableProperty uri="sample#SOAP Input.messageCorrelationIDSelector"/>
+<ConfigurableProperty uri="sample#SOAP Input.targetService"/>
+<ConfigurableProperty uri="sample#SOAP Input.securityProfileName"/>
+<ConfigurableProperty uri="sample#SOAP Input.policySet"/>
+<ConfigurableProperty uri="sample#SOAP Input.policySetBindings"/>
+<ConfigurableProperty uri="sample#SOAP Input.sendProcessingFaultsToFailure"/>
+<ConfigurableProperty override="none" uri="sample#SOAP Input.validateMaster"/>
+<ConfigurableProperty uri="sample#SOAP Input.validateFailureAction"/>
+<ConfigurableProperty uri="sample#SOAP Input.componentLevel"/>
+<ConfigurableProperty uri="sample#SOAP Input.additionalInstances"/>
+<ConfigurableProperty override="http://localhost:7800/soapreq" uri="sample#SOAP Request.webServiceURL"/>
+<ConfigurableProperty override="60" uri="sample#SOAP Request.requestTimeout"/>
+<ConfigurableProperty uri="sample#SOAP Request.httpProxyLocation"/>
+<ConfigurableProperty override="SSL_TLSv2" uri="sample#SOAP Request.sslProtocol"/>
+<ConfigurableProperty uri="sample#SOAP Request.allowedSSLCiphers"/>
+<ConfigurableProperty uri="sample#SOAP Request.requestCompressionType"/>
+<ConfigurableProperty uri="sample#SOAP Request.acceptCompressedResponses"/>
+<ConfigurableProperty uri="sample#SOAP Request.hostnameChecking"/>
+<ConfigurableProperty uri="sample#SOAP Request.keyAlias"/>
+<ConfigurableProperty uri="sample#SOAP Request.enableCRLCheck"/>
+<ConfigurableProperty uri="sample#SOAP Request.jmsDestination"/>
+<ConfigurableProperty uri="sample#SOAP Request.jmsReplyToDestination"/>
+<ConfigurableProperty uri="sample#SOAP Request.requestTimeoutJMS"/>
+<ConfigurableProperty uri="sample#SOAP Request.initialContextFactory"/>
+<ConfigurableProperty uri="sample#SOAP Request.locationJndiBindings"/>
+<ConfigurableProperty uri="sample#SOAP Request.connectionFactoryName"/>
+<ConfigurableProperty uri="sample#SOAP Request.targetService"/>
+<ConfigurableProperty uri="sample#SOAP Request.deliveryMode"/>
+<ConfigurableProperty uri="sample#SOAP Request.messagePriority"/>
+<ConfigurableProperty uri="sample#SOAP Request.messageExpiration"/>
+<ConfigurableProperty uri="sample#SOAP Request.messageType"/>
+<ConfigurableProperty uri="sample#SOAP Request.securityProfileName"/>
+<ConfigurableProperty uri="sample#SOAP Request.policySet"/>
+<ConfigurableProperty uri="sample#SOAP Request.policySetBindings"/>
+<ConfigurableProperty uri="sample#SOAP Request.allowMTOM"/>
+<ConfigurableProperty override="none" uri="sample#SOAP Request.validateMaster"/>
+<ConfigurableProperty uri="sample#SOAP Request.validateFailureAction"/>
+<ConfigurableProperty uri="sample#SOAP Reply.allowMTOM"/>
+<ConfigurableProperty uri="sample#SOAP Reply.validateMaster"/>
+<ConfigurableProperty uri="sample#SOAP Reply.securityProfileName"/>
+<ConfigurableProperty uri="sample#Java Compute.javaClassLoader"/>
+<ConfigurableProperty uri="sample#Java Compute.validateMaster"/>
+<ConfigurableProperty override="http://localhost:7800/soapreq1" uri="sample#SOAP Request1.webServiceURL"/>
+<ConfigurableProperty override="60" uri="sample#SOAP Request1.requestTimeout"/>
+<ConfigurableProperty uri="sample#SOAP Request1.httpProxyLocation"/>
+<ConfigurableProperty override="SSL_TLSv2" uri="sample#SOAP Request1.sslProtocol"/>
+<ConfigurableProperty uri="sample#SOAP Request1.allowedSSLCiphers"/>
+<ConfigurableProperty uri="sample#SOAP Request1.requestCompressionType"/>
+<ConfigurableProperty uri="sample#SOAP Request1.acceptCompressedResponses"/>
+<ConfigurableProperty uri="sample#SOAP Request1.hostnameChecking"/>
+<ConfigurableProperty uri="sample#SOAP Request1.keyAlias"/>
+<ConfigurableProperty uri="sample#SOAP Request1.enableCRLCheck"/>
+<ConfigurableProperty uri="sample#SOAP Request1.jmsDestination"/>
+<ConfigurableProperty uri="sample#SOAP Request1.jmsReplyToDestination"/>
+<ConfigurableProperty uri="sample#SOAP Request1.requestTimeoutJMS"/>
+<ConfigurableProperty uri="sample#SOAP Request1.initialContextFactory"/>
+<ConfigurableProperty uri="sample#SOAP Request1.locationJndiBindings"/>
+<ConfigurableProperty uri="sample#SOAP Request1.connectionFactoryName"/>
+<ConfigurableProperty uri="sample#SOAP Request1.targetService"/>
+<ConfigurableProperty uri="sample#SOAP Request1.deliveryMode"/>
+<ConfigurableProperty uri="sample#SOAP Request1.messagePriority"/>
+<ConfigurableProperty uri="sample#SOAP Request1.messageExpiration"/>
+<ConfigurableProperty uri="sample#SOAP Request1.messageType"/>
+<ConfigurableProperty uri="sample#SOAP Request1.securityProfileName"/>
+<ConfigurableProperty uri="sample#SOAP Request1.policySet"/>
+<ConfigurableProperty uri="sample#SOAP Request1.policySetBindings"/>
+<ConfigurableProperty uri="sample#SOAP Request1.allowMTOM"/>
+<ConfigurableProperty override="none" uri="sample#SOAP Request1.validateMaster"/>
+<ConfigurableProperty uri="sample#SOAP Request1.validateFailureAction"/>
+<ConfigurableProperty override="/soap1" uri="sample#SOAP Input1.urlSelector"/>
+<ConfigurableProperty uri="sample#SOAP Input1.useHTTPS"/>
+<ConfigurableProperty override="90" uri="sample#SOAP Input1.maxClientWaitTime"/>
+<ConfigurableProperty uri="sample#SOAP Input1.allowQueryWSDL"/>
+<ConfigurableProperty uri="sample#SOAP Input1.initialContextFactory"/>
+<ConfigurableProperty uri="sample#SOAP Input1.locationJndiBindings"/>
+<ConfigurableProperty uri="sample#SOAP Input1.connectionFactoryName"/>
+<ConfigurableProperty uri="sample#SOAP Input1.backoutDestination"/>
+<ConfigurableProperty uri="sample#SOAP Input1.backoutThreshold"/>
+<ConfigurableProperty uri="sample#SOAP Input1.propertySelector"/>
+<ConfigurableProperty uri="sample#SOAP Input1.timeStampSelector"/>
+<ConfigurableProperty uri="sample#SOAP Input1.messageDeliveryModeSelector"/>
+<ConfigurableProperty uri="sample#SOAP Input1.messagePrioritySelector"/>
+<ConfigurableProperty uri="sample#SOAP Input1.messageIDSelector"/>
+<ConfigurableProperty uri="sample#SOAP Input1.messageRedeliveredSelector"/>
+<ConfigurableProperty uri="sample#SOAP Input1.messageCorrelationIDSelector"/>
+<ConfigurableProperty uri="sample#SOAP Input1.targetService"/>
+<ConfigurableProperty uri="sample#SOAP Input1.securityProfileName"/>
+<ConfigurableProperty uri="sample#SOAP Input1.policySet"/>
+<ConfigurableProperty uri="sample#SOAP Input1.policySetBindings"/>
+<ConfigurableProperty uri="sample#SOAP Input1.sendProcessingFaultsToFailure"/>
+<ConfigurableProperty override="none" uri="sample#SOAP Input1.validateMaster"/>
+<ConfigurableProperty uri="sample#SOAP Input1.validateFailureAction"/>
+<ConfigurableProperty uri="sample#SOAP Input1.componentLevel"/>
+<ConfigurableProperty uri="sample#SOAP Input1.additionalInstances"/>
+<ConfigurableProperty uri="sample#SOAP Reply1.allowMTOM"/>
+<ConfigurableProperty uri="sample#SOAP Reply1.validateMaster"/>
+<ConfigurableProperty uri="sample#SOAP Reply1.securityProfileName"/>
+<ConfigurableProperty override="http://localhost:7800/soapreq2" uri="sample#SOAP Request2.webServiceURL"/>
+<ConfigurableProperty override="80" uri="sample#SOAP Request2.requestTimeout"/>
+<ConfigurableProperty uri="sample#SOAP Request2.httpProxyLocation"/>
+<ConfigurableProperty override="TLSv1.1" uri="sample#SOAP Request2.sslProtocol"/>
+<ConfigurableProperty uri="sample#SOAP Request2.allowedSSLCiphers"/>
+<ConfigurableProperty uri="sample#SOAP Request2.requestCompressionType"/>
+<ConfigurableProperty uri="sample#SOAP Request2.acceptCompressedResponses"/>
+<ConfigurableProperty uri="sample#SOAP Request2.hostnameChecking"/>
+<ConfigurableProperty uri="sample#SOAP Request2.keyAlias"/>
+<ConfigurableProperty uri="sample#SOAP Request2.enableCRLCheck"/>
+<ConfigurableProperty uri="sample#SOAP Request2.jmsDestination"/>
+<ConfigurableProperty uri="sample#SOAP Request2.jmsReplyToDestination"/>
+<ConfigurableProperty uri="sample#SOAP Request2.requestTimeoutJMS"/>
+<ConfigurableProperty uri="sample#SOAP Request2.initialContextFactory"/>
+<ConfigurableProperty uri="sample#SOAP Request2.locationJndiBindings"/>
+<ConfigurableProperty uri="sample#SOAP Request2.connectionFactoryName"/>
+<ConfigurableProperty uri="sample#SOAP Request2.targetService"/>
+<ConfigurableProperty uri="sample#SOAP Request2.deliveryMode"/>
+<ConfigurableProperty uri="sample#SOAP Request2.messagePriority"/>
+<ConfigurableProperty uri="sample#SOAP Request2.messageExpiration"/>
+<ConfigurableProperty uri="sample#SOAP Request2.messageType"/>
+<ConfigurableProperty uri="sample#SOAP Request2.securityProfileName"/>
+<ConfigurableProperty uri="sample#SOAP Request2.policySet"/>
+<ConfigurableProperty uri="sample#SOAP Request2.policySetBindings"/>
+<ConfigurableProperty uri="sample#SOAP Request2.allowMTOM"/>
+<ConfigurableProperty override="none" uri="sample#SOAP Request2.validateMaster"/>
+<ConfigurableProperty uri="sample#SOAP Request2.validateFailureAction"/>
+</CompiledMessageFlow>
+<CompiledMessageFlow name="httpMq">
+<ConfigurableProperty uri="httpMq#additionalInstances"/>
+<ConfigurableProperty uri="httpMq#notificationThresholdMsgsPerSec"/>
+<ConfigurableProperty uri="httpMq#maximumRateMsgsPerSec"/>
+<ConfigurableProperty uri="httpMq#processingTimeoutSec"/>
+<ConfigurableProperty uri="httpMq#processingTimeoutAction"/>
+<ConfigurableProperty uri="httpMq#wlmPolicy"/>
+<ConfigurableProperty uri="httpMq#commitCount"/>
+<ConfigurableProperty uri="httpMq#commitInterval"/>
+<ConfigurableProperty uri="httpMq#coordinatedTransaction"/>
+<ConfigurableProperty uri="httpMq#consumerPolicySet"/>
+<ConfigurableProperty uri="httpMq#providerPolicySet"/>
+<ConfigurableProperty uri="httpMq#consumerPolicySetBindings"/>
+<ConfigurableProperty uri="httpMq#providerPolicySetBindings"/>
+<ConfigurableProperty uri="httpMq#securityProfileName"/>
+<ConfigurableProperty uri="httpMq#monitoringProfile"/>
+<ConfigurableProperty uri="httpMq#startMode"/>
+<ConfigurableProperty uri="httpMq#startInstancesWhenFlowStarts"/>
+<ConfigurableProperty override="/httpmq" uri="httpMq#HTTP Input.URLSpecifier"/>
+<ConfigurableProperty uri="httpMq#HTTP Input.useHTTPS"/>
+<ConfigurableProperty uri="httpMq#HTTP Input.decompressInputMessage"/>
+<ConfigurableProperty uri="httpMq#HTTP Input.timeoutForClient"/>
+<ConfigurableProperty uri="httpMq#HTTP Input.faultFormat"/>
+<ConfigurableProperty uri="httpMq#HTTP Input.validateMaster"/>
+<ConfigurableProperty uri="httpMq#HTTP Input.securityProfileName"/>
+<ConfigurableProperty uri="httpMq#Compute1.dataSource"/>
+<ConfigurableProperty uri="httpMq#Compute1.connectDatasourceBeforeFlowStarts"/>
+<ConfigurableProperty uri="httpMq#Compute1.validateMaster"/>
+<ConfigurableProperty uri="httpMq#HTTP Reply.validateMaster"/>
+<ConfigurableProperty uri="httpMq#Compute.dataSource"/>
+<ConfigurableProperty uri="httpMq#Compute.connectDatasourceBeforeFlowStarts"/>
+<ConfigurableProperty uri="httpMq#Compute.validateMaster"/>
+<ConfigurableProperty uri="httpMq#Compute2.dataSource"/>
+<ConfigurableProperty uri="httpMq#Compute2.connectDatasourceBeforeFlowStarts"/>
+<ConfigurableProperty uri="httpMq#Compute2.validateMaster"/>
+<ConfigurableProperty override="/fetchmq" uri="httpMq#HTTP Input1.URLSpecifier"/>
+<ConfigurableProperty uri="httpMq#HTTP Input1.useHTTPS"/>
+<ConfigurableProperty uri="httpMq#HTTP Input1.decompressInputMessage"/>
+<ConfigurableProperty uri="httpMq#HTTP Input1.timeoutForClient"/>
+<ConfigurableProperty uri="httpMq#HTTP Input1.faultFormat"/>
+<ConfigurableProperty uri="httpMq#HTTP Input1.validateMaster"/>
+<ConfigurableProperty uri="httpMq#HTTP Input1.securityProfileName"/>
+<ConfigurableProperty uri="httpMq#Compute3.dataSource"/>
+<ConfigurableProperty uri="httpMq#Compute3.connectDatasourceBeforeFlowStarts"/>
+<ConfigurableProperty uri="httpMq#Compute3.validateMaster"/>
+<ConfigurableProperty uri="httpMq#Compute4.dataSource"/>
+<ConfigurableProperty uri="httpMq#Compute4.connectDatasourceBeforeFlowStarts"/>
+<ConfigurableProperty uri="httpMq#Compute4.validateMaster"/>
+<ConfigurableProperty uri="httpMq#HTTP Reply1.validateMaster"/>
+<ConfigurableProperty uri="httpMq#Compute5.dataSource"/>
+<ConfigurableProperty uri="httpMq#Compute5.connectDatasourceBeforeFlowStarts"/>
+<ConfigurableProperty uri="httpMq#Compute5.validateMaster"/>
+</CompiledMessageFlow>
+<CompiledMessageFlow name="JsonToSoap">
+<ConfigurableProperty uri="JsonToSoap#additionalInstances"/>
+<ConfigurableProperty uri="JsonToSoap#notificationThresholdMsgsPerSec"/>
+<ConfigurableProperty uri="JsonToSoap#maximumRateMsgsPerSec"/>
+<ConfigurableProperty uri="JsonToSoap#processingTimeoutSec"/>
+<ConfigurableProperty uri="JsonToSoap#processingTimeoutAction"/>
+<ConfigurableProperty uri="JsonToSoap#wlmPolicy"/>
+<ConfigurableProperty uri="JsonToSoap#commitCount"/>
+<ConfigurableProperty uri="JsonToSoap#commitInterval"/>
+<ConfigurableProperty uri="JsonToSoap#coordinatedTransaction"/>
+<ConfigurableProperty uri="JsonToSoap#consumerPolicySet"/>
+<ConfigurableProperty uri="JsonToSoap#providerPolicySet"/>
+<ConfigurableProperty uri="JsonToSoap#consumerPolicySetBindings"/>
+<ConfigurableProperty uri="JsonToSoap#providerPolicySetBindings"/>
+<ConfigurableProperty uri="JsonToSoap#securityProfileName"/>
+<ConfigurableProperty uri="JsonToSoap#monitoringProfile"/>
+<ConfigurableProperty uri="JsonToSoap#startMode"/>
+<ConfigurableProperty uri="JsonToSoap#startInstancesWhenFlowStarts"/>
+<ConfigurableProperty override="/test1" uri="JsonToSoap#HTTP Input.URLSpecifier"/>
+<ConfigurableProperty uri="JsonToSoap#HTTP Input.useHTTPS"/>
+<ConfigurableProperty uri="JsonToSoap#HTTP Input.decompressInputMessage"/>
+<ConfigurableProperty uri="JsonToSoap#HTTP Input.timeoutForClient"/>
+<ConfigurableProperty uri="JsonToSoap#HTTP Input.faultFormat"/>
+<ConfigurableProperty uri="JsonToSoap#HTTP Input.validateMaster"/>
+<ConfigurableProperty uri="JsonToSoap#HTTP Input.securityProfileName"/>
+<ConfigurableProperty override="none" uri="JsonToSoap#HTTP Reply.validateMaster"/>
+<ConfigurableProperty uri="JsonToSoap#jsonToSoap.dataSource"/>
+<ConfigurableProperty uri="JsonToSoap#jsonToSoap.connectDatasourceBeforeFlowStarts"/>
+<ConfigurableProperty uri="JsonToSoap#jsonToSoap.validateMaster"/>
+</CompiledMessageFlow>
+</Broker>
